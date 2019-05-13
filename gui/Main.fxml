@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainController">
+   <children>
+      <TabPane prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <tabs>
+          <Tab text="Customer">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#openDF" prefHeight="22.0" prefWidth="115.0" text="Deposit Funds" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="94.0" />
+                        <Button layoutX="14.0" layoutY="56.0" mnemonicParsing="false" onAction="#openWF" prefHeight="22.0" prefWidth="115.0" text="Withdraw Funds" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="134.0" />
+                        <Button layoutX="14.0" layoutY="99.0" mnemonicParsing="false" onAction="#openOA" prefHeight="22.0" prefWidth="115.0" text="Open Account" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="14.0" />
+                        <Button layoutX="14.0" layoutY="142.0" mnemonicParsing="false" onAction="#openCA" prefHeight="22.0" prefWidth="115.0" text="Close Account" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="54.0" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Manager">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button layoutX="14.0" layoutY="80.0" mnemonicParsing="false" onAction="#openSA" prefHeight="22.0" prefWidth="115.0" text="Suspend Account" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="14.0" />
+                        <Button layoutX="14.0" layoutY="113.0" mnemonicParsing="false" onAction="#openRA" prefHeight="22.0" prefWidth="115.0" text="Reinstate Account" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="54.0" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

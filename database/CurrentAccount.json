@@ -1,0 +1,1 @@
+[{"accountNo":100000,"pin":237280,"customer":{"customerID":980203,"name":"Zihan WEI","address":"523","dateOfBirth":{"year":1998,"month":1,"dayOfMonth":3,"hourOfDay":0,"minute":0,"second":0},"creditStatus":false},"balance":-980.0,"unClearedBalance":0.0,"overDraftLimit":1000.0,"isSuspended":false,"isActive":true,"noticeNeeded":false,"accountType":0}]
