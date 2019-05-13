@@ -351,9 +351,11 @@ public class BankController {
      */
     public static CurrentAccount openCurrentAccount(Customer customer, String amount) {
         Database db = Database.getInstance();
+        BankAccount bankAccount = new CurrentAccount(customer, 1000.0);
+        bankAccount.addBalance(Double.parseDouble(amount));
         CurrentAccount currentAccount = new CurrentAccount(customer, 1000.0);
         currentAccount.addBalance(Double.parseDouble(amount));
-        db.bankAccountArrayList.add(currentAccount);
+        db.bankAccountArrayList.add(bankAccount);
         db.currentAccountArrayList.add(currentAccount);
         return currentAccount;
     }
@@ -367,9 +369,11 @@ public class BankController {
      */
     public static JuniorAccount openJuniorAccount(Customer customer, String amount) {
         Database db = Database.getInstance();
+        BankAccount bankAccount = new JuniorAccount(customer);
+        bankAccount.addBalance(Double.parseDouble(amount));
         JuniorAccount juniorAccount = new JuniorAccount(customer);
         juniorAccount.addBalance(Double.parseDouble(amount));
-        db.bankAccountArrayList.add(juniorAccount);
+        db.bankAccountArrayList.add(bankAccount);
         db.juniorAccountArrayList.add(juniorAccount);
         return juniorAccount;
     }
@@ -383,9 +387,11 @@ public class BankController {
      */
     public static SaverAccount openSaverAccount(Customer customer, String amount) {
         Database db = Database.getInstance();
+        BankAccount bankAccount = new SaverAccount(customer);
+        bankAccount.addBalance(Double.parseDouble(amount));
         SaverAccount saverAccount = new SaverAccount(customer);
         saverAccount.addBalance(Double.parseDouble(amount));
-        db.bankAccountArrayList.add(saverAccount);
+        db.bankAccountArrayList.add(bankAccount);
         db.saverAccountArrayList.add(saverAccount);
         return saverAccount;
     }
