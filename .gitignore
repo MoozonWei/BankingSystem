@@ -2,3 +2,9 @@
 .idea/
 BankingSystem.iml
 out/
+/database/SaverAppointment.json
+/database/BankAccount.json
+/database/Customer.json
+/database/JuniorAccount.json
+/database/SaverAccount.json
+/database/CurrentAccount.json

@@ -251,7 +251,7 @@ public class BankController {
     /**
      * Get customer's index number in customer array list
      *
-     * @param customerID
+     * @param customerID Customer ID
      * @return Index number
      */
     public static int indexOfCustomerArraylist(String customerID) {
@@ -654,6 +654,7 @@ public class BankController {
      * @return The BankAccount class that has been operated
      */
     public static BankAccount withdrawFunds_01(String accNO, String amount) {
+        System.out.println("withdrawFunds_01");
         Database db = Database.getInstance();
         int index;
         BankAccount bankAccount;
@@ -661,20 +662,20 @@ public class BankController {
             case 0:
                 index = BankController.indexOfBankArraylist(accNO);
                 bankAccount = db.bankAccountArrayList.get(index);
-                bankAccount.setBalance(db.bankAccountArrayList.get(index).getBalance() - Double.parseDouble(amount));
+                bankAccount.setBalance(bankAccount.getBalance() - Double.parseDouble(amount));
 
                 index = BankController.indexOfCurrentArraylist(accNO);
                 bankAccount = db.currentAccountArrayList.get(index);
-                bankAccount.setBalance(db.currentAccountArrayList.get(index).getBalance() - Double.parseDouble(amount));
+                bankAccount.setBalance(bankAccount.getBalance() - Double.parseDouble(amount));
                 return bankAccount;
             case 1:
                 index = BankController.indexOfBankArraylist(accNO);
                 bankAccount = db.bankAccountArrayList.get(index);
-                bankAccount.setBalance(db.bankAccountArrayList.get(index).getBalance() - Double.parseDouble(amount));
+                bankAccount.setBalance(bankAccount.getBalance() - Double.parseDouble(amount));
 
                 index = BankController.indexOfJuniorArraylist(accNO);
                 bankAccount = db.juniorAccountArrayList.get(index);
-                bankAccount.setBalance(db.juniorAccountArrayList.get(index).getBalance() - Double.parseDouble(amount));
+                bankAccount.setBalance(bankAccount.getBalance() - Double.parseDouble(amount));
                 return bankAccount;
             default:
                 AlertController.errorAlert("ERROR", "ERROR", "ERROR IN BankController.withdrawFunds_01()");
@@ -691,6 +692,7 @@ public class BankController {
      * @return The BankAccount class that has been operated
      */
     public static BankAccount withdrawFunds_2(String accNO, String amount) {
+        System.out.println("withdrawFunds_2\n");
         Database db = Database.getInstance();
         int index;
         BankAccount bankAccount;
