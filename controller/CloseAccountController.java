@@ -49,11 +49,14 @@ public class CloseAccountController {
                 AlertController.errorAlert("Invalid", "Invalid Operation", "You still have some funds(cleared/un-cleared) in this account!!");
                 break;
             case 6:
-                BankController.closeBankAccount(anTF.getText());
-                Stage stage = ((Stage) anTF.getScene().getWindow());
-                stage.close();
-                AlertController.informationAlert("Success", "Success", "Account has been closed!!");
-                db.dbWrite();
+
+                if (AlertController.confirmationAlert("Confirmation", "Close Confirmation", "Do you want to close this account?")) {
+                    BankController.closeBankAccount(anTF.getText());
+                    Stage stage = ((Stage) anTF.getScene().getWindow());
+                    stage.close();
+                    AlertController.informationAlert("Success", "Success", "Account has been closed!!");
+                    db.dbWrite();
+                }
                 break;
             default:
                 AlertController.errorAlert("ERROR", "ERROR", this.toString());

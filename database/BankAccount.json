@@ -1,1 +1,52 @@
-[]
+[
+  {
+    "accountNo": 100001,
+    "pin": 163420,
+    "customer": {
+      "customerID": 100202,
+      "name": "zym",
+      "address": "520",
+      "dateOfBirth": {
+        "year": 2010,
+        "month": 1,
+        "dayOfMonth": 2,
+        "hourOfDay": 0,
+        "minute": 0,
+        "second": 0
+      },
+      "creditStatus": true
+    },
+    "balance": 20.0,
+    "unClearedBalance": 0.0,
+    "overDraftLimit": 0.0,
+    "isSuspended": false,
+    "isActive": true,
+    "noticeNeeded": false,
+    "accountType": 1
+  },
+  {
+    "accountNo": 100002,
+    "pin": 398143,
+    "customer": {
+      "customerID": 980203,
+      "name": "wzh",
+      "address": "523",
+      "dateOfBirth": {
+        "year": 1998,
+        "month": 1,
+        "dayOfMonth": 3,
+        "hourOfDay": 0,
+        "minute": 0,
+        "second": 0
+      },
+      "creditStatus": true
+    },
+    "balance": 40.0,
+    "unClearedBalance": 0.0,
+    "overDraftLimit": 0.0,
+    "isSuspended": false,
+    "isActive": true,
+    "noticeNeeded": true,
+    "accountType": 2
+  }
+]

@@ -1,1 +1,1 @@
-[]
+[{"accountNo":100001,"pin":931684,"customer":{"customerID":100202,"name":"zym","address":"520","dateOfBirth":{"year":2010,"month":1,"dayOfMonth":2,"hourOfDay":0,"minute":0,"second":0},"creditStatus":true},"balance":20.0,"unClearedBalance":0.0,"overDraftLimit":0.0,"isSuspended":false,"isActive":true,"noticeNeeded":false,"accountType":1}]
